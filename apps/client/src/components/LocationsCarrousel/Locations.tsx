@@ -49,7 +49,7 @@ export const Locations = () => {
         location: string;
     }
 
-    let LocationsData: locationdata[] = [
+    const LocationsData: locationdata[] = [
       {location: 'Casa Forte'},
       {location: 'Na minha casa'},
       {location: 'Imbiribeira'},

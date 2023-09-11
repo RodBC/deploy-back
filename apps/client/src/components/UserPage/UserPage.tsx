@@ -10,7 +10,7 @@ export const UserPage = () => {
 
   const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex) => {
+  const handleSelect = (selectedIndex: number) => {
     setIndex(selectedIndex);
   };
 
@@ -49,7 +49,7 @@ export const UserPage = () => {
 
             <styled.ContainerLikedInitiatives>
             <styled.H2Text>Iniciativas Curtidas</styled.H2Text>
-                <Carousel  activeIndex={index} onSelect={handleSelect}>      
+                <Carousel  activeIndex={index} onSelect={handleSelect}>
                     <Carousel.Item>
                         <styled.Initative />
                         <Carousel.Caption>

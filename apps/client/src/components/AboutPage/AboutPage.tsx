@@ -1,4 +1,3 @@
-import React from "react";
 import "./AboutPage.css";
 import {Navbar} from "../Navbar/navbar.jsx"
 import { Footer } from "../Footer/Footer.js";
