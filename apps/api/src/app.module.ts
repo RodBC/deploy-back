@@ -6,6 +6,12 @@ import { ConfigModule } from './config/config.module';
 import { InitiativeModule } from './initiative/initiative.module';
 
 @Module({
-    imports:[UsersModule, DatabaseModule, AuthModule, ConfigModule, InitiativeModule],
+  imports: [
+    UsersModule,
+    DatabaseModule,
+    AuthModule,
+    ConfigModule,
+    InitiativeModule,
+  ],
 })
 export class AppModule {}

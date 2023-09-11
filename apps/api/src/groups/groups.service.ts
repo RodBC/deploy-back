@@ -7,17 +7,15 @@ import { v4 as uuidv4 } from 'uuid4';
 @Injectable()
 export class GroupsService {
   create(createGroupDto: CreateGroupDto): GroupsInterface {
-    const { name, array_of_members, number_of_members } = createGroupDto
+    const { name, array_of_members, number_of_members } = createGroupDto;
     const user = {
       id: uuidv4(),
       name: name,
       array_of_members: array_of_members,
-      number_of_members: number_of_members
-    }
+      number_of_members: number_of_members,
+    };
     //array_of_members: object;
-    return user
-
-
+    return user;
   }
 
   findAll() {

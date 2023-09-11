@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Patch, Param, Delete } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Patch,
+  Param,
+  Delete,
+} from '@nestjs/common';
 import { GroupsService } from './groups.service';
 import { CreateGroupDto } from './dto/create-group.dto';
 import { UpdateGroupDto } from './dto/update-group.dto';
@@ -6,10 +14,10 @@ import { GroupsInterface } from './groups.model';
 
 @Controller('groups')
 export class GroupsController {
-  constructor(private readonly groupsService: GroupsService){}
+  constructor(private readonly groupsService: GroupsService) {}
 
   @Post()
-  create(@Body() createGroupDto: CreateGroupDto) : GroupsInterface{
+  create(@Body() createGroupDto: CreateGroupDto): GroupsInterface {
     return this.groupsService.create(createGroupDto);
   }
 
